@@ -9,9 +9,10 @@ spec:
     matchLabels:
       app: my-app
   strategy:
-    blueGreen:
-      activeService: my-app
-      previewService: my-app-prev
+    canary:
+      steps:
+        - setWeight: 100
+
   template:
     metadata:
       labels:
