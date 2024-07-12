@@ -8,6 +8,10 @@ spec:
   selector:
     matchLabels:
       app: my-app
+  strategy:
+    blueGreen:
+      activeService: my-app
+      previewService: my-app-prev
   template:
     metadata:
       labels:
