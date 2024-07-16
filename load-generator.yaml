@@ -5,7 +5,7 @@ metadata:
     app: load-generator
   name: load-generator
 spec:
-  replicas: 1
+  replicas: 0
   progressDeadlineSeconds: 600
   revisionHistoryLimit: 10
   selector:
